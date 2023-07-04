@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+#defaultCanvas0{
+    position: fixed; /*canvasを固定*/
+    top: 0; /*canvasを上に固定*/
+  }
+
+  textarea {
+    resize: none;
+  }
+
+.top-title {
+  font-family: 'ROLAChan',Verdana, Geneva, Tahoma;
+}
+
+.navbar-brand {
+  font-family: 'ROLAChan',Verdana, Geneva, Tahoma;
+}
+
+h2 {
+  font-family: 'ROLAChan',Verdana, Geneva, Tahoma;
+}
+
+.aboutImg {
+  height: 236px;
+}
+
+/* モーダルウィンドウ */
+.modal_overlay, .modal_content {
+  display: none;
+  position: fixed;
+}
+
+.modal_overlay.open, .modal_content.open {
+  display: block;
+}
+
+.modal_content {
+  width: 90%;
+  max-width: 700px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); /*transformって？*/
+  z-index: 101;
+}
+
+.modal_overlay {
+  width: 100%;
+  height: 100%;
+  background: grey;
+  opacity: .6;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+@media screen and (max-width:767px) {
+
+
+
+  .top {
+    text-align: center;
+  }
+
+  .top-title {
+    font-size: 48px;
+    padding-left: 0;
+  }
+
+  #defaultCanvas0 {
+    width: 390px;
+    height: 844px;
+  }
+
+  .aboutImg {
+    height: auto;
+  }
+}
